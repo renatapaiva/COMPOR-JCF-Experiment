@@ -10,11 +10,13 @@ import org.junit.Test;
 
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.Dependente;
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.Endereco;
+import br.ufcg.ppgcc.compor.jcf.experimento.fachada.Etapa1RenataFacade;
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.FachadaExperimento;
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.FontePagadora;
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.Resultado;
 import br.ufcg.ppgcc.compor.jcf.experimento.fachada.Titular;
 
+ 
 public class Experimento1Test {
 
 	private FachadaExperimento fachada;
@@ -22,7 +24,7 @@ public class Experimento1Test {
 	@Before
 	public void iniciar() {
 		//Coloque sua Fachada aqui.
-		fachada = null;
+		fachada = new Etapa1RenataFacade();
 	}
 
 	@Test
